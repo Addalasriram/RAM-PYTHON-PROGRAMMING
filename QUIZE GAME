@@ -1,0 +1,14 @@
+questions = {
+    "Capital of India?": "Delhi",
+    "5 + 7 = ?": "12",
+    "Python is developed by?": "Guido van Rossum"
+}
+
+score = 0
+
+for q, ans in questions.items():
+    user = input(q + " ")
+    if user.lower() == ans.lower():
+        score += 1
+
+print("Your Score:", score)
